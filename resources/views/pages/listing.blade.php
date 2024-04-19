@@ -3,8 +3,6 @@
 @section('title', 'Home')
 
 @section('content')
-
-    <h1>Welcome</h1>
-    {{ env('TEST')}}
+<h1 class='main-heading'>{{ $listing['title'] }}</h1>
 
 @endsection
