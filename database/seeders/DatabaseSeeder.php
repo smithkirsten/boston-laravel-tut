@@ -13,27 +13,20 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-       \App\Models\User::factory(10)->create();
+       \App\Models\User::factory(3)->create();
+       Listing::factory(10)->create();
 
-       Listing::create([
-            'title' => 'Test Listing',
-            'description' => 'This is a test listing',
-            'tags' => 'laravel, php, developement, backend',
-            'company' => 'Test Company',
-            'location' => 'Generic City',
-            'email' => 'test@example.com',
-            'website' => 'https://example.com',
-       ]);
+    //    Listing::create([
+    //         'title' => 'Test Listing',
+    //         'description' => 'This is a test listing',
+    //         'tags' => 'laravel, php, developement, backend',
+    //         'company' => 'Test Company',
+    //         'location' => 'Generic City',
+    //         'email' => 'test@example.com',
+    //         'website' => 'https://example.com',
+    //    ]);
 
-       Listing::create([
-        'title' => 'Example Listing',
-        'description' => 'This is a test listing',
-        'tags' => 'javascript, livewire, php, developement, frontend',
-        'company' => 'Example Company',
-        'location' => 'Generic Metro Area',
-        'email' => 'example@example.com',
-        'website' => 'https://example.com',
-       ]);
+
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
