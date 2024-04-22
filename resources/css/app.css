@@ -10,9 +10,9 @@ body {
   }
 
   .main-heading {
-    @apply text-4xl font-bold text-green-950
+    @apply text-2xl font-bold text-green-950
   }
 
   .listing-header {
-    @apply text-2xl font-bold text-green-950
+    @apply text-xl underline text-green-950
   }
