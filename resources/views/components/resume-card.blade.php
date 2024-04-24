@@ -1,6 +1,6 @@
 @props(['resume'])
 
-<article class='w-full bg-white rounded p-4'>
+<x-card>
     <header class='flex"'>
         <div class='flex gap-4'>
             <a href="/listing/{{$resume['id']}}"><h2 class='listing-header'>{{ $resume->name }}</h2></a> 
@@ -9,4 +9,4 @@
         <p class='italic'>{{$resume->location}} </p>
     </header>
     <p class='font-bold'>{{$resume->skills}}</p>
-</article>
+</x-card>
