@@ -12,7 +12,7 @@
     </head>
     <body class="@yield('body_classes')">
         <nav class='font-bold text-large w-full'>
-            <h1 class='text-center p-2 main-heading'>{{ env('APP_NAME') }}</h1>
+            <a href='/'> <h1 class='text-center p-2 main-heading'>{{ env('APP_NAME') }}</h1> </a>
             <ul class='my-6 p-6 flex justify-between border-y-2'>
                 <li><a href='/listings'>Listings</a></li>
                 <li><a href='/resumes'>Resumes</a></li>
