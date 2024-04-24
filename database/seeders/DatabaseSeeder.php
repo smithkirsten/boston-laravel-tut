@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 use App\Models\Listing;
+use App\Models\Resume;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -15,6 +16,7 @@ class DatabaseSeeder extends Seeder
     {
        \App\Models\User::factory(3)->create();
        Listing::factory(10)->create();
+        Resume::factory(10)->create();
 
     //    Listing::create([
     //         'title' => 'Test Listing',
