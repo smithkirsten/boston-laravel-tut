@@ -1,17 +1,16 @@
 @extends('layouts.app')
 
-@section('title', 'Home')
+@section('title', 'Listings')
 
 @section('content')
-<div class='flex flex-col justify-center'>
+<div class='flex flex-col items-center'>
     <h1 class='main-heading'>{{ $heading }}</h1>
     @unless(count($listings) == 0)
 
-    <ul>
+    <ul class='p-10 w-1/2'>
         @foreach ($listings as $key => $listing)
-            <li>
-                <a href="/listing/{{$listing['id']}}"><h2 class='listing-header'>{{ $key }}: {{ $listing['title'] }}</h2></a>
-                <p>{{$listing['description']}}</p>
+            <li class='mt-4'>
+                <x-listing-card :listing="$listing" />
             </li>
         @endforeach
     
